@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="blue">
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Item Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div *ngIf="selectedItem" class="selection">
+      <ion-card-header>
+        {{selectedItem.title}}
+      </ion-card-header>
+      <ion-card-content>
+        <ion-icon name="{{selectedItem.icon}}"></ion-icon>
+        <p>You navigated here from <b>{{selectedItem.title}}</b></p>
+      </ion-card-content>
+    </div>
+  </ion-card>
+</ion-content>

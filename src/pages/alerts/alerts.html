@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="blue">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Alerts</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ipsam quibusdam doloremque pariatur animi, quo odio ut. Molestiae deleniti beatae ab a recusandae amet molestias nisi! Officiis debitis distinctio dolorum.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <button ion-button block color="blue" (click)="doAlert()">Basic Alert</button>
+
+  <button ion-button block color="blue" (click)="doPrompt()">Prompt Alert</button>
+
+  <button ion-button block color="blue" (click)="doConfirm()">Confirm Alert</button>
+
+  <button ion-button block color="blue" (click)="doRadio()">Radio Alert</button>
+
+  <button ion-button block color="blue" (click)="doCheckbox()">Checkbox Alert</button>
+
+</ion-content>
