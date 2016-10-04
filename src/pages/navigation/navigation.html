@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="blue">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Navigation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-card>
+  <ion-card-content>
+    <p>To navigate from one page to another simply push or pop a new page onto the stack.</p>
+  </ion-card-content>
+</ion-card>
+
+<button ion-button block color="blue" (click)="goToHome()">Go To Home</button>
+
+<button ion-button block color="blue" (click)="goToList()">Go To List</button>
+
+</ion-content>

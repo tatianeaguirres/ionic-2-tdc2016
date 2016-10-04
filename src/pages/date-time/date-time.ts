@@ -9,7 +9,6 @@ export class DateTime {
   public event = {
     month: '2016-10-07',
     timeStarts: '10:15',
-    timeEnds: '2016-10-08'
   }
 
 }

@@ -3,7 +3,7 @@
     <button menuToggle *ngIf="!selectedItem">
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Item Details</ion-title>
+    <ion-title>Detalhes</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -14,8 +14,7 @@
         {{selectedItem.title}}
       </ion-card-header>
       <ion-card-content>
-        <ion-icon name="{{selectedItem.icon}}"></ion-icon>
-        <p>You navigated here from <b>{{selectedItem.title}}</b></p>
+        <p><ion-icon class="icon" name="{{selectedItem.icon}}"></ion-icon> Você está nos detalhes do <b>{{selectedItem.title}}</b></p>
       </ion-card-content>
     </div>
   </ion-card>

@@ -17,8 +17,8 @@ export class Alerts {
   // Basic Alert
   doAlert() {
     let alert = this.alerCtrl.create({
-      title: 'New Friend!',
-      message: 'Your friend, Obi wan Kenobi, just approved your friend request!',
+      title: 'Novo amigo!',
+      message: 'Seu amigo, Obi wan Kenobi, aprovou sua solicitação de amizade!',
       buttons: ['Ok']
     });
     alert.present()
@@ -27,23 +27,23 @@ export class Alerts {
   // Prompt Alert
   doPrompt() {
     let prompt = this.alerCtrl.create({
-      title: 'Login',
-      message: "Enter a name for this new album you're so keen on adding",
+      title: 'Novo álbum',
+      message: "Digite um nome para este novo álbum que você está adicionando",
       inputs: [
         {
-          name: 'title',
-          placeholder: 'Title'
+          name: 'titulo',
+          placeholder: 'Titulo'
         },
       ],
       buttons: [
         {
-          text: 'Cancel',
+          text: 'Cancelar',
           handler: data => {
             console.log('Cancel clicked');
           }
         },
         {
-          text: 'Save',
+          text: 'Salvar',
           handler: data => {
             console.log('Saved clicked');
           }
@@ -56,17 +56,17 @@ export class Alerts {
   // Confirm Alert
   doConfirm() {
     let confirm = this.alerCtrl.create({
-      title: 'Use this lightsaber?',
-      message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
+      title: 'Uso do sabre de luz',
+      message: 'Você concorda em usar este sabre de luz para fazer o bem por toda a galáxia?',
       buttons: [
         {
-          text: 'Disagree',
+          text: 'Concordo',
           handler: () => {
             console.log('Disagree clicked');
           }
         },
         {
-          text: 'Agree',
+          text: 'Não concordo',
           handler: () => {
             console.log('Agree clicked');
           }
@@ -79,52 +79,52 @@ export class Alerts {
   // Radio Alert
   doRadio() {
     let alert = this.alerCtrl.create();
-    alert.setTitle('Lightsaber color');
+    alert.setTitle('Selecione a cor do sabre de luz');
 
     alert.addInput({
       type: 'radio',
-      label: 'Blue',
-      value: 'blue',
+      label: 'Azul',
+      value: 'azul',
       checked: true
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'Green',
-      value: 'green'
+      label: 'Verde',
+      value: 'verde'
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'Red',
-      value: 'red'
+      label: 'Vermelho',
+      value: 'vermelho'
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'Yellow',
-      value: 'yellow'
+      label: 'Amarelo',
+      value: 'amarelo'
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'Purple',
-      value: 'purple'
+      label: 'Roxo',
+      value: 'roxo'
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'White',
-      value: 'white'
+      label: 'Branco',
+      value: 'branco'
     });
 
     alert.addInput({
       type: 'radio',
-      label: 'Black',
-      value: 'black'
+      label: 'Preto',
+      value: 'preto'
     });
 
-    alert.addButton('Cancel');
+    alert.addButton('Cancelar');
     alert.addButton({
       text: 'Ok',
       handler: data => {
@@ -142,7 +142,7 @@ export class Alerts {
   // Checkbox Alert
   doCheckbox() {
     let alert = this.alerCtrl.create();
-    alert.setTitle('Which planets have you visited?');
+    alert.setTitle('Quais planetas você já visitou?');
 
     alert.addInput({
       type: 'checkbox',
@@ -199,7 +199,7 @@ export class Alerts {
       value: 'value6'
     });
 
-    alert.addButton('Cancel');
+    alert.addButton('Cancelar');
     alert.addButton({
       text: 'Okay',
       handler: data => {
