@@ -1,24 +1,27 @@
-p {
-  margin: 20px 0;
-  line-height: 22px;
-  font-size: 16px;
-  text-align: justify;
+.home-page {
+  p {
+    margin: 20px 0;
+    line-height: 22px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  img {
+    text-align: center;
+  }
+
+  ion-card-title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  button {
+    text-align: center;
+  }
 }
 
-img {
-  width: 30%;
-  text-align: center;
-}
-
-ion-card-title {
-  text-align: center;
-  font-weight: bold;
-}
-
-button {
-  text-align: center;
-}
-
-.card-md, .card-wp, .card-ios {
+.card-ios,
+.card-md,
+.card-wp {
   box-shadow: none !important;
 }

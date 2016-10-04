@@ -10,8 +10,9 @@ import { CardBackgroundImages } from '../pages/card-background-images/card-backg
 import { DateTime } from '../pages/date-time/date-time';
 import { Fabs } from '../pages/fabs/fabs';
 import { Modals } from '../pages/modals/modals';
+import { ModalsContent } from '../pages/modals/modals';
 import { Navigation } from '../pages/navigation/navigation';
-import { Popover } from '../pages/popover/popover';
+
 import { Searchbar } from '../pages/searchbar/searchbar';
 import { Segment } from '../pages/segment/segment';
 import { Slides } from '../pages/slides/slides';
@@ -44,7 +45,7 @@ export class MyApp {
       { title: 'Fabs', component: Fabs },
       { title: 'Modals', component: Modals },
       { title: 'Navigation', component: Navigation },
-      { title: 'Popover', component: Popover },
+
       { title: 'Searchbar', component: Searchbar },
       { title: 'Segment', component: Segment },
       { title: 'Slides', component: Slides },

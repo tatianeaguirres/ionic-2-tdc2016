@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="blue">
     <ion-title>
       Description
     </ion-title>
@@ -14,19 +14,19 @@
 
 <ion-content>
   <ion-list>
-      <ion-item>
-        <ion-avatar item-left>
-          <img src="{{character.image}}">
-        </ion-avatar>
-        <h2>{{character.name}}</h2>
-        <p>{{character.quote}}</p>
-      </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{character.image}}">
+      </ion-avatar>
+      <h2>{{character.name}}</h2>
+      <p>{{character.quote}}</p>
+    </ion-item>
 
-      <ion-item *ngFor="let item of character['items']">
-        {{item.title}}
-        <ion-note item-right>
-          {{item.note}}
-        </ion-note>
-      </ion-item>
+    <ion-item *ngFor="let item of character['items']">
+      {{item.title}}
+      <ion-note item-right>
+        {{item.note}}
+      </ion-note>
+    </ion-item>
   </ion-list>
 </ion-content>

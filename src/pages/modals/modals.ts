@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
 import { ModalController, Platform, NavParams, ViewController } from 'ionic-angular';
 
+
 @Component({
-  selector: 'page-modals',
   templateUrl: 'modals.html'
 })
 export class Modals {
-
-  constructor(public modalCtrl: ModalController) {}
+  constructor(public modalCtrl: ModalController) { }
 
   openModal(characterNum) {
 
-    let modal = this.modalCtrl.create(ModalsContentPage, characterNum);
+    let modal = this.modalCtrl.create(ModalsContent, characterNum);
     modal.present();
   }
 }
@@ -19,7 +18,7 @@ export class Modals {
 @Component({
   templateUrl: 'modal-content.html'
 })
-export class ModalsContentPage {
+export class ModalsContent {
   character;
 
   constructor(
@@ -65,5 +64,4 @@ export class ModalsContentPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
-
 }
