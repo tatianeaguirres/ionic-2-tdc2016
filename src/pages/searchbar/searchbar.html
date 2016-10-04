@@ -1,18 +1,19 @@
-<!--
-  Generated template for the Searchbar page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>searchbar</ion-title>
+  <ion-navbar color="blue">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Searchbar</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
 
 </ion-content>

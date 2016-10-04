@@ -1,22 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Platform } from 'ionic-angular';
 
-/*
-  Generated class for the Segment page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-segment',
   templateUrl: 'segment.html'
 })
 export class Segment {
 
-  constructor(public navCtrl: NavController) {}
+  pet: string = "puppies";
+  isAndroid: boolean = false;
 
-  ionViewDidLoad() {
-    console.log('Hello Segment Page');
+  constructor(platform: Platform) {
+    this.isAndroid = platform.is('android');
   }
 
 }
